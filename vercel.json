@@ -11,11 +11,6 @@
             "src": "/(.*)",
             "dest": "/server.js"
         }
-    ],
-    "env": {
-        "JWT_SECRET": "lalalaSECRETKEY",
-        "PORT": "4000",
-        "SUPABASE_URL": "postgresql://postgres.pzkyzynwmlunoptngaup:ZuliyOmo@!23@aws-0-eu-central-1.pooler.supabase.com:6543/postgres",
-        "SUPABASE_KEY": "ZuliyOmo@!23"
-    }
+    ]
+   
 }
