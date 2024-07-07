@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.js"
+      }
+    ],
+    "env": {
+        "JWT_SECRET": "lalalaSECRETKEY",
+        "PORT": 4000,
+        "SUPABASE_URL" : "postgresql://postgres.pzkyzynwmlunoptngaup:ZuliyOmo@!23@aws-0-eu-central-1.pooler.supabase.com:6543/postgres",
+      "DATABASE_URL": "your-database-url",
+      "OTHER_ENV_VARIABLE": "your-env-variable-value"
+    }
+  }
