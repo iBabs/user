@@ -11,6 +11,14 @@
             "src": "/(.*)",
             "dest": "/server.js"
         }
-    ]
+    ],
+    "build": {
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "commands": {
+      "install": "npm install && npm install pg"
+    }
+  }
    
 }
