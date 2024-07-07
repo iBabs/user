@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: your-app-name
+    env: node
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        value: your-database-url
+      - key: OTHER_ENV_VARIABLE
+        value: your-env-variable-value
