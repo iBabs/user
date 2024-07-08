@@ -1,5 +1,5 @@
 import UserOrganisation from "../models/userOrgModel.js";
-import Organisation from "../models/organizationModel.js"; // Adjust the path as necessary
+import Organisation from "../models/organizationModel.js"; 
 
 
 export const getUserOrganisations = async (req, res) => {
@@ -84,10 +84,10 @@ export const createOrganisation = async (req, res) => {
             description
         });
 
-        await UserOrganisation.create({
-            userId,
-            orgId: organisation.orgId
-        });
+        // await UserOrganisation.create({
+        //     userId,
+        //     orgId: organisation.orgId
+        // });
 
         return res.status(201).json({
             status: 'success',
